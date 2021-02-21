@@ -21,7 +21,7 @@ while(!driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getT
 int count = driver.findElements(By.xpath("//a[@class='ui-state-default']")).size();
 for(int i=0; i<count; i++) {
 	String text = driver.findElements(By.xpath("//a[@class='ui-state-default']")).get(i).getText();
-	if(text.equalsIgnoreCase("21")) {
+	if(text.equalsIgnoreCase("22")) {
 		driver.findElements(By.xpath("//a[@class='ui-state-default']")).get(i).click();
 	}
 }
